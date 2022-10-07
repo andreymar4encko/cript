@@ -1,0 +1,94 @@
+html
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+
+body
+  min-width: 300px
+  min-height: 100vh
+  font-family: 'Inter', sans-serif
+  font-weight: 400
+
+img,
+svg
+  max-width: 100%
+  height: auto
+  max-height: 100%
+
+button
+  padding: 0
+  cursor: pointer
+
+a
+  text-decoration: none
+  color: inherit
+
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+h1,
+h2,
+h3,
+h4,
+p
+  margin: 0
+
+.container
+  max-width: 1240px
+  margin: 0 auto
+  padding: 0 30px
+
+  @media (max-width: 1024px)
+    max-width: 840px
+
+  @media (max-width: 768px)
+    max-width: 740px
+
+  @media (max-width: 480px)
+    padding: 0 15px
+
+.btn-reg
+  max-width: 232px
+  width: 100%
+  padding: 11px
+  border-radius: 8px
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+  color: #ffffff
+  border: 1px solid transparent
+  background-color: #55c2ff
+  transition: background-color 0.36s ease-in-out, border-color 0.26s ease-in-out
+
+  &:hover
+    border-color: #1c88eb
+
+  &:focus
+    outline-color: #1c88eb
+
+  &:active
+    background-color: #1c88eb
+
+.overlay
+  position: fixed
+  inset: 0
+  z-index: 10
+  background-color: rgba(0, 0, 0, 0.6)
+  cursor: pointer
+  display: flex
+  overflow-y: auto
+  overflow-x: hidden
+  opacity: 0
+  visibility: hidden
+  transition-property: opacity, visibility
+  transition-timing-function: ease-in-out
+
+  &_open
+    opacity: 100%
+    visibility: visible

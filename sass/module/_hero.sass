@@ -1,0 +1,62 @@
+.hero
+  background-color: #000000
+  background-image: url('../img/background.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+  &__container
+    padding-top: 127px
+    padding-bottom: 127px
+
+    @media (max-width: 1024px)
+      padding-top: 92px
+      padding-bottom: 92px
+
+    @media (max-width: 768px)
+      padding-top: 81px
+      padding-bottom: 81px
+
+    @media (max-width: 480px)
+      padding-top: 50px
+      padding-bottom: 50px
+
+  &__title
+    font-weight: 700
+    font-size: 100px
+    line-height: 121px
+    color: #55c2ff
+    margin-bottom: 18px
+
+    @media (max-width: 768px)
+      font-size: 60px
+      line-height: 73px
+      margin-bottom: 10px
+
+  &__subtitle
+    max-width: 480px
+    font-family: 'IBM Plex Sans'
+    font-weight: 300
+    font-size: 22px
+    line-height: 29px
+    color: #ffffff
+    margin-bottom: 50px
+
+    @media (max-width: 1024px)
+      margin-bottom: 30px
+
+    @media (max-width: 768px)
+      max-width: 354px
+      font-size: 16px
+      line-height: 21px
+      margin-bottom: 24px
+
+    @media (max-width: 480px)
+      max-width: 230px
+      margin-bottom: 25px
+
+  &__btn
+    @media (max-width: 480px)
+      max-width: 188px
+      font-size: 12px
+      line-height: 15px
